@@ -29,6 +29,7 @@ class UserController extends Controller{
             return response()->json($user,200);    
         }
         return response()->json(['error'=>'Unauthorized'],401,[]);
+        
     }
 
     function getToken(Request $request){
